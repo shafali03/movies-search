@@ -33,7 +33,3 @@ I want to be able to be the title of the movie I
 ```
 yarn add enzyme enzyme-adapter-react-16 react-test-renderer enzyme-to-json --dev
 ```
-
-
-
-
