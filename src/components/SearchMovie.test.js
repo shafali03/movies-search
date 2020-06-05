@@ -4,13 +4,7 @@ import SearchMovie from './SearchMovie';
 
 
 
-let wrapper
 
-beforeEach(() => {
-  const mockProps = {
-
-  }
-})
 
 
 test('render without error', () => {
@@ -30,4 +24,11 @@ test('render text movie name', () => {
   const wrapper = shallow(<SearchMovie />)
   const textMovieName = wrapper.find("[data-test='movie-name-text']")
   expect(textMovieName.length).toBe(1)
+})
+
+
+test('render button to search movies', () => {
+  const wrapper = shallow(<SearchMovie />)
+  const searchButton = wrapper.find("[data-test='search-movies-button']")
+  expect(searchButton.length).toBe(1)
 })
