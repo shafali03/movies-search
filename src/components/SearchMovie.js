@@ -47,6 +47,14 @@ function SearchMovie() {
           value={query} onChange={(e) => setQuery(e.target.value)}
         />
 
+        <button
+          data-test='search-movies-button'
+          className="button"
+          type="submit">
+          Search
+        </button>
+
+
       </form>
     </>
   )
