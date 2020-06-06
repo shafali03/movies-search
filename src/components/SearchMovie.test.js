@@ -5,8 +5,6 @@ import SearchMovie from './SearchMovie';
 
 
 
-
-
 test('render without error', () => {
   const wrapper = shallow(<SearchMovie />)
   const componentSearchBox = wrapper.find("[data-test='component-search-box']")
