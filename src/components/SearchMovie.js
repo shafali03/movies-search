@@ -13,7 +13,7 @@ function SearchMovie() {
     e.preventDefault()
 
 
-    const url = 'https://api.themoviedb.org/3/search/movie'
+    const url = `https://api.themoviedb.org/3/search/movie?api_key=`
 
 
 
