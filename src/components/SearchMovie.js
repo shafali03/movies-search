@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import MovieCard from './MovieCard';
 
 
 
@@ -53,9 +54,14 @@ function SearchMovie() {
           type="submit">
           Search
         </button>
-
-
       </form>
+
+      <div className='card-list' data-test='component-moviesCard'>
+        {movies.filter(movie => movie.poster_path).map(movie => (
+          <MovieCard movie={movie} key={movie.id} />
+        ))}
+      </div>
+
     </>
   )
 }
